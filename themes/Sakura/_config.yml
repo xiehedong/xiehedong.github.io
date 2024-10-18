@@ -1,12 +1,12 @@
 # site name
-prefixName: 樱花庄园的
+prefixName: さくら荘その
 siteName: 地平线
 # favicon and site master avatar
 favicon: /images/favicon.ico
 avatar: /img/custom/avatar.jpg
-url: https://sakura.dpx.cn
+url: https://sakura.hojun.cn
 description: Live your life with passion! With some drive!
-cdn: 
+cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
 pjax: 1
 # 1开启
 mathjax: 0
@@ -16,14 +16,16 @@ lazyloadImg: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progre
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
-  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+  归档: { path: /archives, fa: fa-archive faa-shake,
+    submenus: { 
     技术: {path: /categories/技术/, fa: fa-code }, 
     生活: {path: /categories/生活/, fa: fa-file-text-o }, 
     资源: {path: /categories/资源/, fa: fa-cloud-download }, 
     随想: {path: /categories/随想/, fa: fa-commenting-o },
     转载: {path: /categories/转载/, fa: fa-book }
   } }
-  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical,
+    submenus: { 
     书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
     番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
     歌单: {path: /music/, fa: fa-headphones },
@@ -32,7 +34,8 @@ menus:
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   友人帐: { path: /links/, fa: fa-link faa-shake }
   赞赏: { path: /donate/, fa: fa-heart faa-pulse }
-  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+  关于: { path: /, fa: fa-leaf faa-wrench,
+    submenus: { 
     我？: {path: /about/, fa: fa-meetup}, 
     主题: {path: /theme-sakura/, fa: iconfont icon-sakura },
     Lab: {path: /lab/, fa: fa-cogs },
@@ -46,6 +49,8 @@ homePageSortType: -1
 # Home page article shown number)
 homeArticleShown: 10
 # 背景图片 更好的修改
+bgn: 8
+
 bg:
   - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(1).jpg.webp
   - https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/cover/(2).jpg.webp
@@ -68,7 +73,7 @@ startdash:
 
 
 # your site build time or founded date
-siteBuildingTime: 2024/10/17
+siteBuildingTime: 17/10/2024
 
 #social  url, img PC端配置
 social:
