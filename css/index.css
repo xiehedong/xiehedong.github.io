@@ -6867,7 +6867,7 @@ div#archive {
   width: 16px;
   height: 16px;
   background: var(--theme-color) !important;
-  border-radius: 8px;
+  border-radius: 30px;
   opacity: 0.25;
   z-index: 10086;
   pointer-events: none;
@@ -9438,7 +9438,7 @@ hr:before {
 /* 必应壁纸框 */
 #bingDayBox:hover,
 #bingHistoryBox:hover,
-#EEEDogBox:hover,
+#genshin:hover,
 #seovxBox:hover,
 #picsumBox:hover,
 #waiBizhiBox:hover,
@@ -9464,9 +9464,9 @@ hr:before {
   left: 34px;
   content: "必应历史壁纸";
 }
-#EEEDogBox::before {
+#genshin::before {
   left: 20px;
-  content: "EEEDog动漫壁纸";
+  content: "原神随机壁纸";
 }
 #seovxBox::before {
   left: 30px;
@@ -9474,19 +9474,19 @@ hr:before {
 }
 #picsumBox::before {
   left: 24px;
-  content: "picsum随机壁纸";
+  content: "seovx二次元壁纸";
 }
 #waiBizhiBox::before {
   left: 34px;
-  content: "小歪高清壁纸";
+  content: "P站随机";
 }
 #btstuBox::before {
   left: 34px;
-  content: "博天随机壁纸";
+  content: "二次元随机壁纸";
 }
 #unsplashBox::before {
   left: 15px;
-  content: "Unsplash随机壁纸";
+  content: "随机妹子";
 }
 
 /* 评论区圆角 */
