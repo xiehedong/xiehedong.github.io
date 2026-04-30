@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: Lux の Blog
 subtitle: ''
 description: ''
-keywords:
-author: John Doe
-language: en
+keywords: Lux, Blog , Hexo, C++, CMake, 图形学, 博客
+author: Lux
+language: zh-CN
 timezone: ''
 
 # URL
@@ -96,9 +96,22 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/xiehedong/xiehedong.github.io.git
+  branch: master
+
+# menu:
+#   首页: / || fas fa-home
+#   归档: /archives/ || fas fa-archive
+#   标签: /tags/ || fas fa-tags
+#   分类: /categories/ || fas fa-folder-open
+#   清单||fas fa-list||hide:
+#     音乐: /music/ || fas fa-music
+#     电影: /movies/ || fas fa-video
+#   友情链接: /link/ || fas fa-link
+#   关于我: /about/ || fas fa-heart
