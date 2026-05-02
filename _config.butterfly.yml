@@ -363,7 +363,7 @@ aside:
       # 关注按钮文本
       text: Follow Me
       # 关注按钮链接
-      link: https://github.com/xxxxxx
+      link: https://github.com/xiehedong
   card_announcement:
     # 是否显示公告卡片
     enable: true
@@ -373,7 +373,7 @@ aside:
     # 是否显示最近文章卡片
     enable: true
     # 显示文章数量, 0 表示显示所有 If set 0 will show all
-    limit: 5
+    limit: 3
     # 排序方式 Sort: date / updated
     sort: date
     sort_order:
@@ -397,11 +397,11 @@ aside:
     sort_order:
   card_tags:
     # 是否显示标签卡片
-    enable: true
+    enable: false
     # 显示标签数量, 0 表示显示所有 If set 0 will show all
     limit: 40
     # 是否显示标签颜色
-    color: false
+    color: true
     custom_colors:
     # Order of tags, random/name/length  标签排序方式
     orderby: random
@@ -410,7 +410,7 @@ aside:
     sort_order:
   card_archives:
     # 是否显示归档卡片
-    enable: true
+    enable: false
     # Type: monthly / yearly  归档类型
     type: monthly
     # Eg: YYYY年MM月 日期格式
@@ -431,7 +431,7 @@ aside:
     order: -1
   card_webinfo:
     # 是否显示网站信息卡片
-    enable: true
+    enable: false
     # 是否显示文章数量
     post_count: true
     # 是否显示最后更新日期
