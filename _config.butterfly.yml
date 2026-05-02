@@ -441,7 +441,7 @@ aside:
     # Time difference between publish date and now  发布日期与当前时间的差值
     # Formal: Month/Day/Year Time or Year/Month/Day Time  时间格式
     # Leave it empty if you don't enable this feature  如果不启用此功能，请留空
-    runtime_date: Year/Month/Day Time
+    runtime_date:
 
 # --------------------------------------
 #  底部右侧按钮设置 Bottom right button settings Settings
