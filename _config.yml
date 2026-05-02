@@ -13,7 +13,7 @@ timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://xiehedong.github.io/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -104,14 +104,3 @@ deploy:
   type: git
   repo: https://github.com/xiehedong/xiehedong.github.io.git
   branch: master
-
-# menu:
-#   首页: / || fas fa-home
-#   归档: /archives/ || fas fa-archive
-#   标签: /tags/ || fas fa-tags
-#   分类: /categories/ || fas fa-folder-open
-#   清单||fas fa-list||hide:
-#     音乐: /music/ || fas fa-music
-#     电影: /movies/ || fas fa-video
-#   友情链接: /link/ || fas fa-link
-#   关于我: /about/ || fas fa-heart

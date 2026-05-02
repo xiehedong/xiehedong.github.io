@@ -1,16 +1,4 @@
-
-# menu:
-#   首页: / || fas fa-home
-#   归档: /archives/ || fas fa-archive
-#   标签: /tags/ || fas fa-tags
-#   分类: /categories/ || fas fa-folder-open
-#   清单||fas fa-list||hide:
-#     音乐: /music/ || fas fa-music
-#     电影: /movies/ || fas fa-video
-#   友情链接: /link/ || fas fa-link
-#   关于我: /about/ || fas fa-heart
-
-  # --------------------------------------
+# --------------------------------------
 # Hexo Butterfly Theme Configuration
 # If you have any questions, please refer to the documentation
 # Chinese: https://butterfly.js.org/
@@ -22,40 +10,48 @@
 # --------------------------------------
 
 nav:
-  # Navigation bar logo image
+  # Navigation bar logo image 网站的 logo，直接填入图片链接
   logo:
+  #是否显示网站标题
   display_title: true
+  #是否在滚动时显示文章标题
   display_post_title: true
-  # Whether to fix navigation bar
+  # Whether to fix navigation bar 是否固定状态栏
   fixed: false
 
 menu:
-  Home: / || fas fa-home
+  首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
-  List||fas fa-list||hide:
-    Music: /music/ || fas fa-music
-    Movie: /movies/ || fas fa-video
+  清单||fas fa-list||hide:
+    音乐: /music/ || fas fa-music
+    电影: /movies/ || fas fa-video
   友情链接: /link/ || fas fa-link
+  关于: /about/ || fas fa-heart
 
 # --------------------------------------
-# Code Blocks Settings
+# Code Blocks Settings 代码块设置
 # --------------------------------------
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
   theme: darker
+  #是否使用 Mac 风格的代码块样式
   macStyle: false
-  # Code block height limit (unit: px)
+  # Code block height limit (unit: px) 代码块高度限制（单位：像素）
   height_limit: false
+  # 是否开启代码块自动换行
   word_wrap: true
 
   # Toolbar
+  #是否显示复制按钮
   copy: true
+  #是否显示语言标签
   language: true
   # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
   shrink: false
+  # 是否开启代码块全屏显示
   fullpage: false
 
 # Social media links
@@ -76,7 +72,7 @@ favicon: /img/favicon.png
 avatar:
   # 头像图片链接
   img: /img/butterfly-icon.png
-  # 是否启用头像效果
+  # 是否启用头像效果(一直转圈)
   effect: false
 
 # Disable all banner images
@@ -85,29 +81,29 @@ disable_top_img: false
 # If the banner of page not setting, it will show the default_top_img
 default_top_img:
 
-# The banner image of index page
+# The banner image of index page 主页的顶部图
 index_img:
 
-# The banner image of archive page
+# The banner image of archive page 归档页的顶部图
 archive_img:
 
-# Note: tag page, not tags page
+# Note: tag page, not tags page 标签页的顶部图
 tag_img:
 
-# The banner image of tag page, you can set the banner image for each tag
+# The banner image of tag page, you can set the banner image for each tag 标签子页面的顶部图，每个标签的顶部图可以单独设置
 # Format:
 #  - tag name: xxxxx
 tag_per_img:
 
-# Note: category page, not categories page
+# Note: category page, not categories page 分类页的顶部图
 category_img:
 
-# The banner image of category page, you can set the banner image for each category
+# The banner image of category page, you can set the banner image for each category 分类子页面的顶部图，每个分类的顶部图可以单独设置
 # Format:
 #  - category name: xxxxx
 category_per_img:
 
-# The background image of footer
+# The background image of footer 页脚的背景图
 footer_img: false
 
 # Website Background
@@ -119,13 +115,16 @@ background:
 # 封面设置
 cover:
   # Disable the cover or not
+  #主页是否显示文章封面
   index_enable: true
+  #侧边栏是否显示文章封面
   aside_enable: true
+  #归档页是否显示文章封面
   archives_enable: true
   # 主页封面的位置
   # 选择: left/right/both
   position: both
-  # When cover is not set, the default cover is displayed
+  # When cover is not set, the default cover is displayed 当封面未设置时，显示默认封面
   default_cover:
     # - xxx.jpg
 
@@ -145,27 +144,34 @@ error_404:
   # 404 页面的卡片背景图片
   background: /img/error-page.png
 
-# 文章元数据设置
+# 文章元数据设置（用来显示文章的相关信息）
 post_meta:
-  # Home Page主页页面
+  # Home Page 主页
   page:
-    # 日期类型 Choose: created / updated / both
+    # 文章的日期类型 Choose: created / updated / both
     date_type: created
-    # Choose: date / relative
+    # Choose: date / relative 显示明确日期还是相对日期
     date_format: date
+    #是否显示文章的分类
     categories: true
+    #是否显示文章的标签
     tags: false
+    #是否显示文字标签
     label: true
-   # 文章页面
+
+   # 文章页
   post:
-    # 元数据位置 Choose: left / center
+    # 文章页 meta 显示的位置 Choose: left / center
     position: left
-    # Choose: created / updated / both
+    # Choose: created / updated / both 文章日期类型
     date_type: both
-    # Choose: date / relative
+    # Choose: date / relative 显示明确日期还是相对日期
     date_format: date
+    #是否显示文章的分类
     categories: true
+    #是否显示文章的标签
     tags: true
+    #是否显示文字标签
     label: true
 
 # --------------------------------------
@@ -177,7 +183,7 @@ post_meta:
 # 站点信息的位置，The position of site info, eg: 300px/300em/300rem/10%
 index_site_info_top:
 # 首页头图的高度，The height of top_img, eg: 300px/300em/300rem
-index_top_img_height:
+index_top_img_height: 500px
 
 # 首页副标题的设置The subtitle on homepage
 subtitle:
@@ -198,6 +204,7 @@ subtitle:
   source: false
   # If you close the typewriter effect, the subtitle will only show the first line of sub
   sub:
+    - 今日事&#44;今日毕
 
 # 首页文章布局的设置Article article layout on the homepage
 # 1: Cover on the left, info on the right
@@ -209,7 +216,7 @@ subtitle:
 # 7: Masonry layout - Info displayed on the cover
 index_layout: 3
 
-# Display the article introduction on homepage
+# Display the article introduction on homepage 主页文章简介
 # 1: description
 # 2: both (if the description exists, it will show description, or show the auto_excerpt)
 # 3: auto_excerpt (default)
@@ -238,7 +245,7 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  # 是否启用文章版权信息
+  # 是否启用文章版权声明
   enable: true
   # 是否进行文章 URL 解码
   decode: false
@@ -263,7 +270,7 @@ reward:
     #   link:
     #   text: alipay
 
-# 文章编辑Post edit
+# 文章编辑按钮 Post edit
 # 轻松在线浏览和编辑博客源代码Easily browse and edit blog source code online.
 post_edit:
   # 是否启用在线编辑
@@ -278,14 +285,15 @@ related_post:
   enable: true
   # 显示的相关文章数量
   limit: 6
-  # 日期类型 Choose: created / updated / both
+  # 日期类型（创建日or更新日） Choose: created / updated / both
   date_type: created
 
+# 文章分页按钮
 # Choose: 1 / 2 / false
-# “下一篇文章”将链接到旧文章 1: The 'next post' will link to old post
-# “下一篇文章”将链接到新文章 2: The 'next post' will link to new post
+# 1: The 'next post' will link to old post 下一篇是旧文章
+# 2: The 'next post' will link to new post 下一篇是新文章
 # false: 禁用分页disable pagination
-post_pagination: 1
+post_pagination: 2
 
 # 文章过期通知 Notice of outdated article
 noticeOutdate:
@@ -298,7 +306,7 @@ noticeOutdate:
   # Position: top / bottom
   position: top
   message_prev: It has been #已经过了
-  message_next: days since the last update, the content of the article may be outdated. #天自上次更新，文章内容可能已过时。
+  message_next: days since the last update, the content of the article may be outdated. #天，自上次更新，文章内容可能已过时。
 
 # --------------------------------------
 # 页脚设置 Footer page settings Settings
@@ -306,11 +314,12 @@ noticeOutdate:
 footer:
   # 页脚导航栏配置
   nav:
+  # 博客年份
   owner:
     # 是否启用页脚所有者信息
     enable: true
     #网站创建年份
-    since: 2025
+    since: 2026
   # 主题和框架的版权声明 Copyright of theme and framework
   copyright:
     enable: true
@@ -374,7 +383,7 @@ aside:
     sort_order:
     # 显示评论数量
     limit: 6
-    # Unit: mins, save data to localStorage  单位：分钟，保存数据到 localStorage
+    # Unit: mins, save data to localStorage  保存时间 单位：分钟，保存数据到 localStorage
     storage: 10
     # 是否显示评论头像
     avatar: true
@@ -414,7 +423,7 @@ aside:
   card_post_series:
     # 是否显示文章系列卡片
     enable: true
-    # The title shows the series name  文章系列标题
+    # The title shows the series name  是否显示系列名称
     series_title: false
     # Order by title or date  文章系列排序方式
     orderBy: 'date'
@@ -428,10 +437,11 @@ aside:
     # 是否显示最后更新日期
     last_push_date: true
     sort_order:
+    # 显示网站运行时间
     # Time difference between publish date and now  发布日期与当前时间的差值
     # Formal: Month/Day/Year Time or Year/Month/Day Time  时间格式
     # Leave it empty if you don't enable this feature  如果不启用此功能，请留空
-    runtime_date:
+    runtime_date: Year/Month/Day Time
 
 # --------------------------------------
 #  底部右侧按钮设置 Bottom right button settings Settings
@@ -525,7 +535,7 @@ wordcount:
   # Display the total word count of the website in aside's webinfo  在侧  边栏的网站信息卡片中显示总字数统计
   total_wordcount: true
 
-# Busuanzi count for PV / UV in site 
+# 访问人数 Busuanzi count for PV / UV in site 
 busuanzi:
   # 网站 UV 统计
   site_uv: true
@@ -543,13 +553,15 @@ busuanzi:
 # if you set it to false, it will load mathjax/katex script according to your setting (add the 'mathjax: true' or 'katex: true' in page's front-matter)
 math:
   # Choose: mathjax, katex
-  # Leave it empty if you don't need math  如果不需要数学公式，留空
+  # Leave it empty if you don't need math  选择数学公式渲染引擎
   use:
+  # 是否每一页都加载数学公式渲染引擎
   per_page: true
+  # 是否隐藏滚动条
   hide_scrollbar: false
 
   mathjax:
-    # Enable the contextual menu  是否启用数学文上下文菜单功能
+    # Enable the contextual menu  是否启用右键菜单功能
     enableMenu: true
     # Choose: all / ams / none, This controls whether equations are numbered and how 控制是否对公式编号以及如何编号
     tags: none
@@ -566,6 +578,7 @@ search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search  如果不需要搜索功能，留空
   use:
+  # 搜索框的提示文字
   placeholder:
 
   # Algolia Search  Algolia 搜索
@@ -787,13 +800,16 @@ artalk:
 # --------------------------------------
 
 chat:
-  # Choose: chatra/tidio/crisp 聊天服务类型
+  # 选择你要使用的聊天工具
+  # Choose: chatra/tidio/crisp
   # Leave it empty if you don't need chat
   use:
   # Chat Button [recommend]
   # It will create a button in the bottom right corner of website, and hide the origin button
+  # 是否开启右下角聊天按钮
   rightside_button: false
   # The origin chat button is displayed when scrolling up, and the button is hidden when scrolling down
+  # 是否开启滚动时隐藏聊天按钮
   button_hide_show: false
 
 # Chatra 聊天服务配置
@@ -885,7 +901,7 @@ ad:
   post:
 
 # --------------------------------------
-# Verification 站点验证配置
+# Verification 网站验证配置
 # --------------------------------------
 
 site_verification:
@@ -946,10 +962,11 @@ tag_ui:
 # Rounded corners for UI elements
 rounded_corners_ui: true
 
-# Stretches the lines so that each line has equal width 拉伸行使每行宽度相等
+# 文字左右对齐
+# Stretches the lines so that each line has equal width 
 text_align_justify: false
 
-# Add a mask to the header and footer 为页眉和页脚添加遮罩
+# Add a mask to the header and footer 为页眉和页脚添加黑色遮罩
 mask:
   header: true
   footer: true
@@ -975,7 +992,7 @@ display_mode: light
 beautify:
   # 是否启用美化
   enable: false
-  # Specify the field to beautify (site or post) 美化范围
+  # Specify the field to beautify (site or post) 美化范围 post只在文章页生效  site 在全站生效
   field: post
   # Specify the icon to be used as a prefix for the title, such as '\f0c1' 标题前缀图标
   title_prefix_icon:
@@ -1007,10 +1024,10 @@ hr_icon:
 # https://github.com/disjukr/activate-power-mode
 activate_power_mode:
   # 是否启用打字机效果
-  enable: false
-  # 是否启用彩色效果
+  enable: true
+  # 是否启用彩色效果 (冒光特效)
   colorful: true
-  # 是否启用震动效果
+  # 是否启用震动效果 (抖动特效)
   shake: true
   # 是否在移动设备上启用
   mobile: false
@@ -1096,7 +1113,7 @@ clickShowText:
 # https://github.com/francoischalifour/medium-zoom
 # https://fancyapps.com/fancybox/
 # Leave it empty if you don't need lightbox
-lightbox:
+lightbox: https://fancyapps.com/fancybox/
 
 # --------------------------------------
 # Tag Plugins settings 标签插件设置
@@ -1121,7 +1138,7 @@ abcjs:
   # 是否在每页显示音乐符号插件
   per_page: true
 
-# Mermaid
+# Mermaid 
 # https://github.com/mermaid-js/mermaid
 mermaid:
   # 是否启用Mermaid插件
@@ -1192,13 +1209,13 @@ aplayerInject:
   # 是否每页启用
   per_page: true
 
-# Snackbar - Toast Notification 通知栏
+# Snackbar - Toast Notification 弹窗
 # https://github.com/polonel/SnackBar
 # position: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
-  # 是否启用通知栏
+  # 是否启用弹窗
   enable: false
-  # 通知栏位置
+  # 弹窗位置
   position: bottom-left
   # The background color of Toast Notification in light mode and dark mode
   bg_light: '#49b1f5'
